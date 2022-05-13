@@ -32,4 +32,4 @@ def mouse_up():
     if var.menu == False:
         if var.state == '':
             if functionphysics.point_inside_rect_list(mouse[0], mouse[1], UI.start_button):
-                var.scene = 'saveselect'
+                var.scene = 'save_select'

@@ -1,3 +1,4 @@
+from email.mime import image
 import sys
 import pygame
 
@@ -18,6 +19,7 @@ def main():
     var.clock = pygame.time.Clock()
     
     font_init()
+    image_load()
 
     while True:
         loop()

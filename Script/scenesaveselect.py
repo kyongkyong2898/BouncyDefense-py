@@ -32,4 +32,4 @@ def mouse_up():
         if var.state == '':
             for i in range(3):
                 if functionphysics.point_inside_rect_list(mouse[0], mouse[1], UI.save_data_button[i]):
-                    pass
+                    var.scene = 'level_select'

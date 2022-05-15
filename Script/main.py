@@ -46,6 +46,14 @@ def input_handle():
             if event.type == pygame.MOUSEBUTTONUP:
                 scenelevelselect.mouse_up()
 
+            elif event.type == pygame.KEYDOWN:
+                key = event.key
+                scenelevelselect.key_down(key)
+
+            elif event.type == pygame.KEYUP:
+                key = event.key
+                scenelevelselect.key_up(key)
+
         elif var.scene == 'battle':
             if event.type == pygame.MOUSEBUTTONUP:
                 scenebattle.mouse_up()
